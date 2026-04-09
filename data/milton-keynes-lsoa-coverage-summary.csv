@@ -1,0 +1,5 @@
+scenario,mk_lsoas_total,mk_lsoas_active,mk_lsoas_inactive,mk_ec_count_total,mk_asset_total_mw
+SA,166,30,136,581.0,371.84000000000003
+SB,166,30,136,581.0,371.84000000000003
+SC,166,29,137,567.0,367.08000000000004
+SD,166,30,136,581.0,371.84000000000003

@@ -1,0 +1,18 @@
+{
+  "scenario": "SD",
+  "run_dir": "/Users/federicogambedotti/Documents/GitHub/ECModel/outputs/policy_benchmark/run_archive/20260408_074422__50_lsoa_smoketest",
+  "lsoas_total": 166,
+  "lsoas_active": 30,
+  "total_capacity_mw": 371.84000000000003,
+  "co2_kt_proxy_window": 8.066344784,
+  "outputs": {
+    "geojson": "/Users/federicogambedotti/Documents/GitHub/PEM-website/data/mk_lsoa_boundaries_with_metrics_sd.geojson",
+    "lsoa_metrics_csv": "/Users/federicogambedotti/Documents/GitHub/PEM-website/data/mk_story_lsoa_metrics_sd.csv",
+    "outcomes_csv": "/Users/federicogambedotti/Documents/GitHub/PEM-website/data/mk_story_outcomes_sd.csv",
+    "gini_csv": "/Users/federicogambedotti/Documents/GitHub/PEM-website/data/mk_story_gini_metrics.csv",
+    "chart_1_poverty_map": "/Users/federicogambedotti/Documents/GitHub/PEM-website/charts/mk_story_1_fuel_poverty_map.png",
+    "chart_2_deployment_map": "/Users/federicogambedotti/Documents/GitHub/PEM-website/charts/mk_story_2_deployment_map_sd.png",
+    "chart_3_outcomes": "/Users/federicogambedotti/Documents/GitHub/PEM-website/charts/mk_story_3_outcomes_sd.png",
+    "chart_4_gini": "/Users/federicogambedotti/Documents/GitHub/PEM-website/charts/mk_story_4_gini_targeting.png"
+  }
+}

@@ -1,0 +1,151 @@
+Participatory Energy Modelling
+
+Research
+Methodology
+Get Involved
+Contact
+
+Participatory Energy Modelling
+
+Modelling energy communities with the people who build them.
+
+A PhD research project developing an open, equity-focused model for scaling energy communities across England and Wales, shaped by practitioner knowledge, not just data.
+
+Get involved →
+See methodology
+
+About the Research
+
+What is this project about?
+
+Energy communities, locally governed groups that collectively invest in low-carbon energy, are central to a just energy transition. But we still lack good answers to a fundamental question: where should they be built, and for whom?
+
+This PhD project develops an optimisation model that determines how energy communities should be deployed across England and Wales, accounting not just for cost, but for equity, fuel poverty, grid constraints, and community governance. Crucially, the assumptions that drive the model are co-developed with practitioners through structured workshops, ensuring that real-world knowledge shapes the analysis from the start.
+
+Research Questions
+
+1
+
+Where and at what scale should energy communities be deployed across England and Wales to maximise social, environmental, and economic benefits?
+
+2
+
+How do different policy priorities, such as emphasising cost efficiency versus equity targeting, change who benefits from energy community deployment?
+
+3
+
+How can qualitative knowledge from practitioners be systematically translated into quantitative modelling assumptions, and what difference does it make?
+
+4
+
+What is the measurable impact of community-based energy deployment compared to individual household technology adoption alone?
+
+Illustrative Scenario Profile
+
+A simple preview of how model outcomes can shift when policy emphasis moves from cost-first planning toward equity-first planning.
+
+Relative score
+Cost-first
+Balanced
+Equity-first
+
+Benefit
+Equity
+Benefit
+Equity
+Benefit
+Equity
+
+Social benefit
+
+Equity reach
+
+Methodology
+
+How the research works
+
+The project follows a participatory modelling approach: practitioner knowledge directly shapes the model before results are generated, not after.
+
+1
+
+Public datasets establish a transparent baseline before assumptions are adjusted with practitioner input. This stage is currently in progress.
+
+Baseline model
+
+An initial optimisation model is built using publicly available data on energy, housing, and deprivation.
+
+Status: in progress (April 2026)
+
+2
+
+A short survey gathers priorities before the workshop so discussion can focus on model trade-offs and implementation realism.
+
+Pre-workshop survey
+
+A short survey gathers practitioners' initial views on key assumptions and priorities.
+
+Date: 6 May 2026
+
+3
+
+A structured two-hour workshop translates lived practitioner knowledge into explicit modelling assumptions.
+
+Participatory workshop
+
+A structured two-hour discussion explores key themes to refine the model's assumptions.
+
+Date: 3 June 2026, 2:00-4:00 PM (UK time)
+
+4
+
+Workshop insights are encoded as model parameters and tested across scenarios with different policy priorities.
+
+Scenario modelling
+
+Insights are translated into model parameters, and scenarios reflecting different priorities are run.
+
+Window: June-September 2026
+
+5
+
+A second workshop returns results to participants for reflection, challenge, and validation before final interpretation.
+
+Second participatory workshop
+
+Reflection and feedback session to validate findings and challenge assumptions before final analysis.
+
+Window: September-October 2026
+
+Get Involved
+
+We are recruiting practitioners
+
+We are looking for energy community practitioners to take part in our workshops. Your experience is not just welcome, it is essential. This research is designed so that your knowledge shapes what gets modelled, not the other way around.
+
+You work with, or for, an energy community organisation in the UK
+
+You have experience in community energy development, funding, governance, or policy
+
+You are willing to take part in a short survey and a two-hour online workshop
+
+You are interested in how modelling tools can better represent the reality of community energy
+
+Express your interest →
+
+Contact
+
+Get in touch
+
+Questions about the project or the workshops? Feel free to reach out directly.
+
+Federico Gambedotti
+
+PhD Researcher · Participatory Energy Modelling
+
+I study how the UK energy transition affects energy equity, energy demand-side flexibility, and demand reduction across communities.
+
+federico.gambedotti.23@ucl.ac.uk
+LinkedIn profile
+EDRC profile
+
+Participatory Energy Modelling · PhD Research · England & Wales

@@ -1,0 +1,50 @@
+Milton Keynes Stakeholder Story Charts
+Generated on: 2026-04-09 (Europe/London)
+Model run source: ECModel outputs/policy_benchmark/run_archive/20260408_074422__50_lsoa_smoketest
+Primary scenario shown in maps and trajectory: SD (Balanced)
+
+How to recreate the charts
+1) Go to /Users/federicogambedotti/Documents/GitHub/PEM-website
+2) Run: python3 scripts/generate_mk_story_charts.py
+3) The PNG charts are written to /Users/federicogambedotti/Documents/GitHub/PEM-website/charts
+
+Chart 1: mk_story_1_fuel_poverty_map.png
+This map shows the baseline fuel poverty rate by LSOA across Milton Keynes, before adding energy communities.
+Darker polygons indicate higher fuel poverty rates, and lighter polygons indicate lower rates.
+The latitude/longitude grid is included so viewers can place each area geographically.
+
+Chart 2: mk_story_2_deployment_map_sd.png
+This map shows where energy communities are deployed in the SD scenario, with bubble size and color representing MW per LSOA.
+Light gray points/polygons are in-scope LSOAs without active deployment in this scenario, while green bubbles mark deployed locations.
+In this run, 30 out of 166 Milton Keynes LSOAs are active, with 371.84 MW total modelled capacity.
+
+Chart 3: mk_story_3_outcomes_sd.png
+This chart shows three model outcome proxies over time (2025 to 2050): fuel-poverty reduction proxy, flexibility (peak MW reduced), and demand-reduction proxy.
+The 100% value in fuel-poverty reduction is a model-normalized proxy ceiling in this rollout table, not a literal statement that real fuel poverty is completely eliminated.
+The demand-reduction proxy reaches about 2.42%, which means modelled demand is reduced by ~2.42% versus its baseline proxy under this scenario.
+
+Chart 4: mk_story_4_gini_targeting.png
+The green bars are deployment MW Gini values by scenario, where higher values indicate a more spatially concentrated deployment pattern.
+The dashed line is the baseline Gini of fuel-poverty exposure (proxy), shown as a context line for inequality in need rather than inequality in deployment.
+The orange targeting-ratio line compares MW share in the highest-poverty 30% LSOAs to their population share; values above 1 indicate progressive targeting toward higher-need areas.
+
+Key numeric results used in these charts
+- Milton Keynes LSOAs in scope: 166
+- SD active LSOAs: 30
+- SD total deployed MW: 371.84
+- SD avoided CO2 proxy (model window): 8.07 kt
+- SD 2050 flexibility proxy: 254.98 MW peak reduction
+- SD 2050 demand reduction proxy: 2.42%
+- SD targeting ratio (top 30% poverty LSOAs): 1.60
+
+Raw data files in this folder
+- charts/raw_data/mk_lsoa_boundaries_with_metrics_sd.geojson
+- charts/raw_data/mk_story_lsoa_metrics_sd.csv
+- charts/raw_data/mk_story_outcomes_sd.csv
+- charts/raw_data/mk_story_gini_metrics.csv
+- charts/raw_data/mk_story_chart_pack_summary.json
+- charts/raw_data/milton-keynes-lsoa-coverage.csv
+- charts/raw_data/milton-keynes-lsoa-coverage-summary.csv
+
+Script used to generate the charts
+- charts/scripts/generate_mk_story_charts.py
