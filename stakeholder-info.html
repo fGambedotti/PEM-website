@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stakeholder Information | Participatory Energy Modelling</title>
+  <meta name="description" content="Stakeholder timeline and participation steps for the Participatory Energy Modelling workshops.">
+  <style>
+    :root {
+      --bg: #f3f1ee;
+      --surface: #ffffff;
+      --surface-soft: #f8f7f4;
+      --hero-bg: #152a20;
+      --hero-bg-2: #1f3a2b;
+      --text: #1c1c1c;
+      --text-muted: #575a56;
+      --accent: #3a6b4a;
+      --accent-2: #2b5240;
+      --accent-warm: #c48b3a;
+      --border: rgba(24, 39, 31, 0.14);
+      --shadow-soft: 0 18px 34px rgba(26, 46, 34, 0.12);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      font-family: var(--font-sans);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      color: var(--text);
+      background:
+        radial-gradient(680px 340px at 90% -10%, rgba(196, 139, 58, 0.1), transparent 65%),
+        radial-gradient(900px 500px at -5% 0%, rgba(58, 107, 74, 0.09), transparent 70%),
+        var(--bg);
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 2px;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 26px 22px 30px;
+    }
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--accent-2);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 999px;
+      padding: 7px 12px;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      background: rgba(58, 107, 74, 0.08);
+      outline: none;
+    }
+
+    .export-note {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .hero {
+      border: 1px solid var(--border);
+      background: linear-gradient(140deg, var(--hero-bg), var(--hero-bg-2));
+      color: #f4f6f4;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-soft);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(1.45rem, 2vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      font-size: 0.95rem;
+      color: #d0ded1;
+      max-width: 80ch;
+    }
+
+    .deadline-pill {
+      margin-top: 10px;
+      display: inline-block;
+      background: rgba(196, 139, 58, 0.23);
+      border: 1px solid rgba(196, 139, 58, 0.6);
+      color: #ffefda;
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .timeline-wrap {
+      position: relative;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 22px rgba(26, 46, 34, 0.08);
+      padding: 8px 10px 10px;
+      overflow: hidden;
+    }
+
+    .timeline-wrap::before {
+      content: "";
+      position: absolute;
+      left: 195px;
+      top: 24px;
+      bottom: 24px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(58, 107, 74, 0.2), rgba(58, 107, 74, 0.65), rgba(58, 107, 74, 0.2));
+      pointer-events: none;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 176px minmax(0, 1fr) 312px;
+      gap: 14px;
+      align-items: stretch;
+      padding: 12px;
+      position: relative;
+    }
+
+    .timeline-item + .timeline-item {
+      border-top: 1px dashed rgba(24, 39, 31, 0.2);
+    }
+
+    .date-box {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 9px 10px;
+      align-self: center;
+      position: relative;
+    }
+
+    .date-box::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #e9f0eb;
+    }
+
+    .date-label {
+      margin: 0;
+      font-size: 0.73rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .date-value {
+      margin: 5px 0 0;
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.32;
+    }
+
+    .event-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: linear-gradient(180deg, #ffffff, #fcfcfb);
+      box-shadow: 0 6px 14px rgba(26, 46, 34, 0.06);
+      padding: 9px 11px;
+      min-height: 100%;
+    }
+
+    .event-box h2 {
+      margin: 0;
+      font-size: 0.96rem;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .event-box p {
+      margin: 6px 0 0;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .action-box {
+      border: 1px solid rgba(196, 139, 58, 0.55);
+      border-radius: var(--radius-sm);
+      background: linear-gradient(180deg, #fffdf9, #fff6e8);
+      box-shadow: 0 6px 14px rgba(138, 98, 33, 0.08);
+      padding: 9px 11px;
+      min-height: 100%;
+    }
+
+    .action-box h3 {
+      margin: 0;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #8f5f20;
+      font-weight: 700;
+    }
+
+    .action-box ul {
+      margin: 7px 0 0;
+      padding-left: 18px;
+      font-size: 0.86rem;
+      color: #4b4e49;
+    }
+
+    .action-box li + li {
+      margin-top: 4px;
+    }
+
+    .action-placeholder {
+      margin: 0;
+      font-size: 0.88rem;
+      color: #6e5b40;
+      font-weight: 400;
+      line-height: 1.45;
+    }
+
+    .footer-note {
+      margin-top: 10px;
+      font-size: 0.79rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    @media (max-width: 980px) {
+      .timeline-wrap::before {
+        display: none;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .date-box::after {
+        display: none;
+      }
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 10mm;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .back-link,
+      .export-note {
+        display: none;
+      }
+
+      .hero,
+      .timeline-wrap,
+      .event-box,
+      .action-box,
+      .date-box {
+        box-shadow: none;
+      }
+
+      .timeline-item {
+        break-inside: avoid;
+        padding: 6px 6px;
+      }
+
+      .hero {
+        margin-bottom: 8px;
+      }
+
+      .event-box p,
+      .action-box ul {
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top">
+      <a class="back-link" href="index.html">← Back to main project page</a>
+      <div class="export-note">Tip for PDF: print this page using "Background graphics" enabled.</div>
+    </div>
+
+    <section class="hero" aria-labelledby="stakeholder-title">
+      <h1 id="stakeholder-title">Stakeholder Information</h1>
+      <p>This one-page timeline summarises what happens, when it happens, and what each stakeholder needs to do to participate in the workshop process.</p>
+      <span class="deadline-pill">Initial onboarding steps should be completed by Wednesday 6 May 2026.</span>
+    </section>
+
+    <section class="timeline-wrap" aria-label="Stakeholder participation timeline">
+      <article class="timeline-item">
+        <div class="date-box">
+          <p class="date-label">Phase 1</p>
+          <p class="date-value">April 2026<br>to 6 May 2026</p>
+        </div>
+        <div class="event-box">
+          <h2>Recruitment and onboarding</h2>
+          <p>You receive the invitation and core participation documents. This stage confirms who will participate and ensures everyone has the same baseline project information before the survey starts.</p>
+        </div>
+        <div class="action-box">
+          <h3>What you need to do</h3>
+          <ul>
+            <li>Read the information sheet.</li>
+            <li>Read the consent form.</li>
+            <li>Reply to the invitation email to confirm participation.</li>
+            <li>Complete these steps by Wednesday 6 May 2026.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date-box">
+          <p class="date-label">Phase 2</p>
+          <p class="date-value">Wednesday<br>6 May 2026</p>
+        </div>
+        <div class="event-box">
+          <h2>Pre-workshop survey sent</h2>
+          <p>A short survey is sent to gather your views on community energy priorities and transition challenges. These responses are used to shape the first modelling assumptions before the live workshop discussion.</p>
+        </div>
+        <div class="action-box">
+          <h3>What you need to do</h3>
+          <ul>
+            <li>Complete the survey when you receive it.</li>
+            <li>Allow around 10-15 minutes.</li>
+            <li>Submit by the deadline stated in the survey email.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date-box">
+          <p class="date-label">Phase 3</p>
+          <p class="date-value">Wednesday<br>3 June 2026<br>2:00-4:00 PM UK</p>
+        </div>
+        <div class="event-box">
+          <h2>First participatory workshop</h2>
+          <p>This is the core co-design session where participants discuss practical constraints, priorities, and trade-offs. Workshop insights are translated into model parameters so practitioner knowledge directly shapes the analysis.</p>
+        </div>
+        <div class="action-box">
+          <h3>What you need to do</h3>
+          <p class="action-placeholder">This information will be provided at a later date.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date-box">
+          <p class="date-label">Phase 4</p>
+          <p class="date-value">June to September 2026</p>
+        </div>
+        <div class="event-box">
+          <h2>Scenario modelling and analysis</h2>
+          <p>The research team encodes workshop inputs and runs multiple policy scenarios. This stage turns workshop discussions into comparable model outputs across equity, flexibility, and demand outcomes.</p>
+        </div>
+        <div class="action-box">
+          <h3>What you need to do</h3>
+          <p class="action-placeholder">This information will be provided at a later date.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="date-box">
+          <p class="date-label">Phase 5</p>
+          <p class="date-value">September to October 2026</p>
+        </div>
+        <div class="event-box">
+          <h2>Second participatory workshop (results feedback)</h2>
+          <p>Preliminary findings are shared back with stakeholders for validation and challenge. This ensures interpretation is grounded in real-world practice before final reporting.</p>
+        </div>
+        <div class="action-box">
+          <h3>What you need to do</h3>
+          <p class="action-placeholder">This information will be provided at a later date.</p>
+        </div>
+      </article>
+    </section>
+
+    <p class="footer-note">Participatory Energy Modelling · Stakeholder timeline handout</p>
+  </main>
+</body>
+</html>
